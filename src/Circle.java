@@ -30,4 +30,12 @@ public class Circle extends Shape {
     public double calcPerimeter() {
         return 2 * Math.PI * radius;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nRadius: "+ radius +
+                "\nArea: "+ calcArea() +
+                "\nPerimeter: "+ calcPerimeter();
+    }
 }

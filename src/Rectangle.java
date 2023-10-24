@@ -47,4 +47,13 @@ public class Rectangle extends Shape {
     public double calcArea() {
         return width * height;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nWidth: "+ width +
+                "\nHeight: "+ height +
+                "\nArea: "+ calcArea() +
+                "\nPerimeter: "+ calcPerimeter();
+    }
 }

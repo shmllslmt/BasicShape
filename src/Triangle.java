@@ -70,4 +70,15 @@ public class Triangle extends Shape{
     public double calcArea() {
         return 1 / 2 * base * height;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nBase: "+ base +
+                "\nHeight: "+ height +
+                "\nFirst Side: "+ sideA +
+                "\nSecond Side: "+ sideB +
+                "\nArea: "+ calcArea() +
+                "\nPerimeter: "+ calcPerimeter();
+    }
 }
